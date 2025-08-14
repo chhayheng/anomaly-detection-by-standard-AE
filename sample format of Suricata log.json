@@ -1,0 +1,58 @@
+{
+    "timestamp": "2025-04-11T00:00:06.027600+0700",
+    "flow_id": 933227557896587,
+    "in_iface": "ens192",
+    "event_type": "http",
+    "src_ip": "103.16.62.202",
+    "src_port": 42235,
+    "dest_ip": "47.236.1.18",
+    "dest_port": 80,
+    "proto": "TCP",
+    "tx_id": 1,
+    "metadata": {
+        "flowbits": ["http.dottedquadhost"]
+    },
+    "http": {
+        "hostname": "47.236.1.18",
+        "url": "/service/acs/ZAT81CH001420",
+        "http_user_agent": "RG/Device 10.x",
+        "http_content_type": "text/xml"
+    }
+}
+...
+{
+    "timestamp": "2025-04-11T17:07:47.570289+0700",
+    "flow_id": 667652296074927,
+    "in_iface": "ens192",
+    "event_type": "alert",
+    "src_ip": "108.162.216.163",
+    "src_port": 18692,
+    "dest_ip": "103.16.60.131",
+    "dest_port": 443,
+    "proto": "TCP",
+    "alert": {
+        "action": "allowed",
+        "gid": 1,
+        "signature_id": 1000000006,
+        "rev": 1,
+        "signature": "HTTPS Flood",
+        "category": ""
+    }
+}
+...
+
+All possible object:
+'timestamp', 'flow_id', 'in_iface', 'event_type', 'src_ip', 'src_port',
+'dest_ip', 'dest_port', 'proto', 'tx_id', 'metadata', 'http', 'alert',
+'flow', 'tls', 'icmp_type', 'icmp_code', 'app_proto', 'rdp', 'ssh',
+'dns', 'snmp', 'app_proto_ts', 'anomaly', 'app_proto_tc', 'files',
+'sip', 'smtp', 'ikev2', 'app_proto_expected', 'app_proto_orig',
+'tunnel', 'smb', 'tftp', 'email'
+
+All possible event_type:
+'sip', 'snmp', 'rdp', 'tls', 'ikev2', 'http', 'anomaly', 'tftp', 'ssh', 
+'ftp', 'ftp_data', 'smb', 'alert', 'smtp'
+
+======================================
+
+FOR MORE DETAILED AND LATEST INFORMATION, PLEASE REFER TO OFFICIAL SURICATA DOCUMENTATIONS.
